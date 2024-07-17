@@ -31,3 +31,11 @@ A code repo for javascript challenge from chaicode
         - I took little bit of help from internet to understand more and made a **function for switch case** (Task 5)
 
 3. Task 7 about *creating program to check* **Leap Year** was bit hard but eventually I got it.
+
+
+## Day 4 - Loops
+
+1. Did questions based on **for, while, do-while loops**.
+
+2. **Something New!**
+    - I got to know about **Continue** statement in loops and we can use **Break** statement in loops as well (task 8, 9).
