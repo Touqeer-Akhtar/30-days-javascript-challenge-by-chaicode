@@ -43,9 +43,18 @@ A code repo for javascript challenge from chaicode
 
 ## Day 5 - Functions
 
-1. Did questions based on :- 
+1. Did questions based on Functions like :- 
 - function declaration
 - function expression
 - arrow functions
 - functions with default value
 - high-order functions
+
+
+## Day 5 - Array
+
+1. Did questions based on Arrays :- 
+- Array creation and access
+- Array methods like push, pop, shift, unshift, **map, filter, reduce**
+- **Multi-dimensional Array** and accessing specific element
+```arr[i][j]``` where i is the index of inside array(in which element is) and then j is the index of the element (task 13).
