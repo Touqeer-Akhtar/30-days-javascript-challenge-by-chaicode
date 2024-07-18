@@ -39,3 +39,13 @@ A code repo for javascript challenge from chaicode
 
 2. **Something New!**
     - I got to know about **Continue** statement in loops and we can use **Break** statement in loops as well (task 8, 9).
+
+
+## Day 5 - Functions
+
+1. Did questions based on :- 
+- function declaration
+- function expression
+- arrow functions
+- functions with default value
+- high-order functions
