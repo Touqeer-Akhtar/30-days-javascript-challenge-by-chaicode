@@ -67,3 +67,9 @@ A code repo for javascript challenge from chaicode
 3. Nested Object
 4. **this** keyword in object
 5. Accessing all keys and value of an object through **Object.keys(<-objName->)** and **Object.values(<-objName->)**
+
+## Day 8 - ES6+ Features
+
+- Template Literals, Destructuring, Default parameters
+- Spread and Rest Operators
+- Enchanced Object Literals
