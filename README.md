@@ -51,10 +51,19 @@ A code repo for javascript challenge from chaicode
 - high-order functions
 
 
-## Day 5 - Array
+## Day 6 - Array
 
 1. Did questions based on Arrays :- 
 - Array creation and access
 - Array methods like push, pop, shift, unshift, **map, filter, reduce**
 - **Multi-dimensional Array** and accessing specific element
 ```arr[i][j]``` where i is the index of inside array(in which element is) and then j is the index of the element (task 13).
+
+
+## Day 7 - Objects
+
+1. Creating and accessing objects
+2. Object properties(variables) and methods(functions)
+3. Nested Object
+4. **this** keyword in object
+5. Accessing all keys and value of an object through **Object.keys(<-objName->)** and **Object.values(<-objName->)**
