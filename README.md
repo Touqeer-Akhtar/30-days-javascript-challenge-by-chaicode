@@ -73,3 +73,10 @@ A code repo for javascript challenge from chaicode
 - Template Literals, Destructuring, Default parameters
 - Spread and Rest Operators
 - Enchanced Object Literals
+
+## Day 9 - DOM Manipulation
+
+1. Selecting and manipulation elements
+2. Creating, Adding and Removing elements
+3. Modifying Attributes and Classes
+4. Event Handling

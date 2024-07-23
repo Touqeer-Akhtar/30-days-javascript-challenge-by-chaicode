@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .dark {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p id="task-1" class="task-2">Hello</p>
+    <ul>
+        <li>1st li</li>
+        <li>2nd li</li>
+        <li>3rd li</li>
+        <li>4th li</li>
+        <li>5th li</li>
+    </ul>
+    <div id="contentDiv">Some Content</div>
+    <button>Change Content</button>
+    <div class="dark">Hello</div>
+    <img src="https://images.pexels.com/photos/10147934/pexels-photo-10147934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <script>
+        let task1 = document.getElementById("task-1")
+        task1.innerText = "Task-1, Content changed"
+
+        let task2 = document.getElementsByClassName("task-2")   // returns object
+        task2[0].style.backgroundColor = "red"
+        
+        let task3 = document.createElement("div")
+        task3.innerText = "Created new div with text content"
+        document.body.append(task3)
+
+        let task4 = document.querySelector("ul")
+        let li = document.createElement("li")
+        li.innerText = "Created new li and added in ul"
+        task4.append(li)
+
+        let task5 = document.querySelector("ul")
+        task5.removeChild(li)
+
+        // Task 6
+        task5.removeChild(task5.lastElementChild)
+
+        // Task 7
+        let img = document.querySelector("img")
+        img.src = "https://images.pexels.com/photos/25792099/pexels-photo-25792099/free-photo-of-sun-loungers-and-beach-umbrellas-standing-on-a-pier.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+
+        // Task 8
+        let div = document.querySelector("div")
+        div.classList.remove("dark")
+
+        // Task 9
+        let btn = document.querySelector("button")
+        let contentDiv = document.querySelector("#contentDiv")
+        contentDiv.style.border = "2px solid red"
+        btn.addEventListener("click", () => {
+            contentDiv.innerText = "Content Changed!"
+        })
+
+        // Task 10
+        contentDiv.addEventListener("mouseover", () => {
+            contentDiv.style.border = "2px solid black"
+        })
+        contentDiv.addEventListener("mouseout", () => {
+            contentDiv.style.border = "2px solid red"
+        })
+        
+    </script>
+</body>
+</html>
