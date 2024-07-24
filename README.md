@@ -80,3 +80,9 @@ A code repo for javascript challenge from chaicode
 2. Creating, Adding and Removing elements
 3. Modifying Attributes and Classes
 4. Event Handling
+
+## Day 10 - Event Handling
+
+1. Basic event hadling, mouse events, keyboard events
+2. Form events, prevent default, **accessing data from form**
+3. **Event Delegation** (**adding single event on parent element** and using that **on all child elements**)

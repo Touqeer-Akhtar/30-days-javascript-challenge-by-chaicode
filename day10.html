@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p style="background-color: blue;">Lorem ipsum dolor sit amet.</p>
+    <button>Change Content</button>
+    <input id="input-1" type="text" placeholder="input-1">
+    <input id="input-2" type="text" placeholder="input-2">
+    
+    <form>
+        <h1>Form</h1>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name">
+        <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+        <button>Submit</button>
+    </form>
+    <p id="selectBoxCont">Hello</p>
+    <select name="" id="">
+        <option value="" selected disabled>Select Option</option>
+        <option value="1st">1st</option>
+        <option value="2nd">2nd</option>
+        <option value="3rd">3rd</option>
+    </select>
+    <ul id="task-9">
+        <li>Task 9 li 1</li>
+        <li>Task 9 li 2</li>
+        <li>Task 9 li 3</li>
+    </ul>
+    <ul id="task-10"></ul>
+    <img style="display: block;" src="https://images.pexels.com/photos/10147934/pexels-photo-10147934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <script>
+        // Task 1
+        let p = document.querySelector("p")
+        let btn = document.querySelector("button")
+        btn.addEventListener("click", () => {
+            p.innerText = "Task-1, Content Changed!"
+        })
+
+        // Task 2
+        let img = document.querySelector("img")
+        img.addEventListener("dblclick", () => {
+            if (img.style.opacity === '0') {
+                img.style.opacity = '1';
+            } else {
+                img.style.opacity = '0';
+            }
+        })
+
+        // Task 3
+        p.addEventListener("mouseover", () => {
+            p.style.backgroundColor = "red"
+        })
+        // Task 4
+        p.addEventListener("mouseout", () => {
+            p.style.backgroundColor = "blue"
+        })
+
+        // Task 5
+        let input1 = document.querySelector("#input-1")
+        input1.addEventListener("keydown", (e) => {
+            console.log(e.key);
+        })
+
+        // Task 6
+        let input2 = document.querySelector("#input-2")
+        input2.addEventListener("keyup", () => {
+            input2.value = p.innerText
+            console.log(p.innerText);
+        })
+
+        // Task 7
+        let form = document.querySelector("form")
+        form.addEventListener("submit", (e) => {
+            e.preventDefault(e)
+
+            let data = Object.fromEntries(new FormData(e.target))
+            console.log(data);
+        })
+
+        // Task 8
+        let selectBox = document.querySelector("select")
+        let selectBoxCont = document.querySelector("#selectBoxCont")
+        selectBox.addEventListener("change", (e) => {
+            console.log(e.target.value);
+            selectBoxCont.innerText = e.target.value
+        })
+
+        //Task 9
+        let ul9 = document.querySelector("#task-9")
+
+        ul9.addEventListener("click", (e) => {
+            console.log(e.target.innerText);
+        })
+
+        // Task 10
+        let ul10 = document.getElementById("task-10")
+        let li10 = document.createElement("li")
+        li10.innerText = "Task-10 li"
+        ul10.insertAdjacentElement("afterbegin", li10)
+
+
+        ul10.addEventListener("click", (e) => {
+            console.log(e.target.innerText);
+        })
+
+
+    </script>
+</body>
+</html>
