@@ -86,3 +86,9 @@ A code repo for javascript challenge from chaicode
 1. Basic event hadling, mouse events, keyboard events
 2. Form events, prevent default, **accessing data from form**
 3. **Event Delegation** (**adding single event on parent element** and using that **on all child elements**)
+
+## Day 11 - Promises and Async/Await
+
+1. Promises, Chaining promises, Async/Await
+2. Fetching data from API
+3. Promise.all, Promise.race
