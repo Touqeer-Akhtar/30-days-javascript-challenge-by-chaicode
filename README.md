@@ -92,3 +92,9 @@ A code repo for javascript challenge from chaicode
 1. Promises, Chaining promises, Async/Await
 2. Fetching data from API
 3. Promise.all, Promise.race
+
+## Day 12 - Error Handling
+
+1. try-catch, finally block
+2. Custom Error Objects
+3. Error handling in Promises and Fetch
